@@ -4,7 +4,8 @@ cython
 imageio-ffmpeg
 kornia
 numpy
-nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast.git@78528e683210dfaa1be57e3c65aa37d3b36c6644
+#nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast.git@78528e683210dfaa1be57e3c65aa37d3b36c6644
+nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast.git
 Pillow
 PyGLM
 resize-right
@@ -19,7 +20,14 @@ tensorboard
 easydict 
 cholespy 
 fire
-torch-scatter 
-torch-sparse
--f https://data.pyg.org/whl/torch-1.13.1+11.7.html
+#pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+#conda install -y -c conda-forge igl
+#pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.12.1+cu113html
+#conda install pytorch-sparse -c pyg
+#conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
+# export PATH="/usr/local/cuda-11.7/bin:$PATH"
+# export LD_LIBRARY_PATH="/usr/local/cuda-11.7/lib64:$LD_LIBRARY_PATH"
 pymeshlab
+transformers
+diffusers
+accelerate
